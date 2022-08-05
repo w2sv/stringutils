@@ -11,7 +11,7 @@ def split_at_uppercase(string: str) -> List[str]:
     return re.findall('[A-Z][^A-Z]*', string)
 
 
-def unique_hash(s: str, digits=16) -> int:
+def unique_string_hash(s: str, digits=16) -> int:
     """ Returns:
             string hash being consistent across runs """
 
