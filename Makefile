@@ -13,7 +13,7 @@ pytest:
 	coverage run -m pytest -vv tests/
 
 doctest:
-	python -m pytest -vv --doctest-modules --doctest-continue-on-failure ./stringutils/
+	coverage run -am pytest -vv --doctest-modules --doctest-continue-on-failure ./stringutils/
 
 coverage-report:
 	coverage xml
